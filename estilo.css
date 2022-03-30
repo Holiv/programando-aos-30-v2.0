@@ -48,11 +48,8 @@ header{
     #find-me-button{
         display: flex;
         font-size: 0.7em;
-    
-        background-image: linear-gradient(90deg, rgb(76, 201, 240), rgb(181, 23, 158), rgb(247, 37, 133));
-            -webkit-background-clip: text;
-            color: transparent;
-    } 
+    }
+        
     #find-me-toggle a{
         font-size: 0.7em;
     }  
