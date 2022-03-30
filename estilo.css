@@ -1,0 +1,268 @@
+/*CSS Main Website*/
+body, html{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(33, 37, 41);
+    color: rgb(222, 226, 230);
+    font-family: quicksand, Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+body a{
+    text-decoration: none;
+    color: rgb(222, 226, 230);
+}
+
+header{
+    height: 10vh;
+    margin: 0;
+}
+    .nav-link{
+        color: rgb(222, 226, 230);
+    }
+    .navbar a:hover{
+        background-image: linear-gradient(90deg, rgb(76, 201, 240), rgb(181, 23, 158), rgb(247, 37, 133));
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    a.active{
+        background-image: linear-gradient(90deg, rgb(76, 201, 240), rgb(181, 23, 158), rgb(247, 37, 133));
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+    .navbar-center{
+        display: flex;
+        align-items: center;
+    }
+    #logo-p30{
+        background-image: linear-gradient(90deg, rgb(76, 201, 240), rgb(181, 23, 158), rgb(247, 37, 133));
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 1.3em;
+    }
+    button{
+        width: 130px;
+        justify-content: center;
+    }
+    #find-me-button{
+        display: flex;
+        font-size: 0.8em;
+    
+        background-image: linear-gradient(90deg, rgb(76, 201, 240), rgb(181, 23, 158), rgb(247, 37, 133));
+            -webkit-background-clip: text;
+            color: transparent;
+    }   
+
+main{
+    height: 80vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+#container-logo{
+    width: 100vw;
+    height: 480px;
+    align-content: center;
+    justify-content: center;     
+}
+
+#programando-logo{
+    width: 350px;
+    height: 100px;
+}
+    #programando-text-logo{
+        font-size: 1.9em;
+        letter-spacing: 0.1em;
+        text-align: center;
+
+        background-image: linear-gradient(90deg, rgb(247, 37, 133), rgb(114, 9, 183), rgb(76, 201, 240));
+        -webkit-background-clip: text;
+        color: transparent;
+        
+        border-bottom: 1px solid rgb(222, 226, 230);
+        display: inline-block;
+        width: 350px;
+        box-sizing: border-box;
+        padding-bottom: 5px;
+    }
+    #programando-subtext-logo{
+        font-size: 0.9em;
+        text-align: center;
+        letter-spacing: 0.1em;
+
+        display: inline-block;
+        width: 350px;
+
+        background-image: linear-gradient(90deg, rgb(247, 37, 133), rgb(181, 23, 158), rgb(76, 201, 240));
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+#programando-text{
+    width: 418px;
+    height: 418px;
+    text-align: justify;
+    }
+    #programando-text p{
+        display: inline-block;
+    }
+    #programando-text a{
+        background-image: linear-gradient(90deg, rgb(247, 37, 133), rgb(181, 23, 158), rgb(76, 201, 240));
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+footer{
+    height: 10vh;
+    margin: 0;
+}
+#animacao-footer{
+    position: relative;
+    top: 0%;
+
+    animation-name: animacao-footer;
+	animation-duration: 1.5s;
+	animation-delay: 0s;
+	animation-iteration-count: 1;  
+}
+@keyframes animacao-footer{
+    from{
+        top: 20%;
+
+    }
+    to{
+        top: 0%;
+
+    }
+
+}
+
+/*CSS Main Blog*/
+aside#aside-blog-p30{
+    color: rgb(222, 226, 230);
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+}
+
+div#tag-lateral{
+    background: rgb(52, 58, 64);
+    height: 80vh;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    margin-left: 5px;
+}
+
+#tag-lateral div{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+aside.p30-button{
+    background-color: rgb(52, 58, 64);
+}
+
+div#main-blog-p30{
+    height: 100%;
+    margin: 0;
+}
+
+div.card-space{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    height: 95% !important;
+    width: 100% !important;
+    background-color: rgb(52, 58, 64);
+}
+.card-text{
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+.card-p30-01{
+    box-shadow: 3px 3px rgb(247, 37, 133);
+}
+.card-p30-02{
+    box-shadow: 3px 3px rgb(181, 23, 158);
+}
+.card-p30-03{
+    box-shadow: 3px 3px rgb(114, 9, 183);
+}
+.card-p30-04{
+    box-shadow: 3px 3px rgb(72, 12, 168);
+}
+.card-p30-05{
+    box-shadow: 3px 3px rgb(58, 12, 163);
+}
+.card-p30-06{
+    box-shadow: 3px 3px rgb(63, 55, 201);
+}
+.card-p30-07{
+    box-shadow: 3px 3px rgb(72, 149, 239);
+}
+.card-p30-08{
+    box-shadow: 3px 3px rgb(76, 201, 240);
+}
+
+.card-footer-p30{
+    padding: 0 5px 5px 5px;
+}
+
+.p30-button{
+    background-color: rgb(52, 58, 64);
+    color: rgb(222, 226, 230);
+    width: 49%;
+    font-size: 0.8em;
+    text-align: center;
+    border-radius: 5px;
+}
+    .p30-button a{
+        display: block;
+        border-radius: 5px;
+    }
+    .p30-button:hover{
+        background-color: rgb(222, 226, 230);
+        color: rgb(33, 37, 41);
+        font-weight: bold;
+    }
+.p30-tag{
+    background-image: linear-gradient(45deg, rgb(76, 201, 240), rgb(181, 23, 158));
+    color: rgb(33, 37, 41);
+}
+.p30-aside-tag{
+    background-color: rgb(222, 226, 230);
+}
+.p30-aside-tag a{
+    color: rgb(33, 37, 41);
+    font-weight: bold;
+}
+    .p30-tag a{
+        color: rgb(222, 226, 230);
+    }
+    .p30-tag a:hover{
+        color: rgb(33, 37, 41);
+    }
+
+.card-header-cs50{
+    height: 20%;
+    background-image: url(./img/tag-cs50.png) ;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+.card-header-webdev{
+    height: 20%;
+    background-image: url(./img/tag-webdev.png) ;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
