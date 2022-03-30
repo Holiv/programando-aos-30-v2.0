@@ -47,12 +47,15 @@ header{
     }
     #find-me-button{
         display: flex;
-        font-size: 0.8em;
+        font-size: 0.7em;
     
         background-image: linear-gradient(90deg, rgb(76, 201, 240), rgb(181, 23, 158), rgb(247, 37, 133));
             -webkit-background-clip: text;
             color: transparent;
-    }   
+    }
+    #find-me-button a{
+	font-size: 0.7em;
+    }
 
 main{
     height: 80vh;
