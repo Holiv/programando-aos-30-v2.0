@@ -1,0 +1,128 @@
+*{
+    color: rgb(33, 37, 41);
+    font-family: quicksand, Arial, Helvetica, sans-serif;
+    
+    /*background-color: rgb(222, 226, 230);*/
+}
+/*Scroll bar desing*/
+.scrollbar::-webkit-scrollbar{
+    width: 7px;
+}
+.scrollbar::-webkit-scrollbar-track{
+    background-color: rgb(76, 201, 240, 0.1);
+}
+.scrollbar::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    background: rgb(247, 37, 133, 0.2); 
+}
+
+html{
+    height: 100%;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    background-image: linear-gradient(145deg, rgb(222, 226, 230) 70%,rgb(76, 201, 240, 0.2), rgb(181, 23, 158, 0.2));
+    background-repeat: no-repeat;
+}
+body a {
+    color: rgb(33, 37, 41);
+    text-decoration: none;
+}
+.container{
+    
+}
+header{
+    height: 10vh;
+    margin: 0 auto;
+}
+    .navbar-brand span{
+        font-size: 1.3em;
+        background-image: linear-gradient(135deg, rgb(76, 201, 240), rgb(181, 23, 158), rgb(247, 37, 133));
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .navbar-center{
+        display: flex;
+        align-content: center;
+    }
+    .navbar-center a{
+        color: rgb(33, 37, 41);
+    }
+    .navbar-center a:hover{
+        background-image: linear-gradient(90deg, rgb(76, 201, 240), rgb(181, 23, 158), rgb(247, 37, 133));
+        -webkit-background-clip: text;
+        color: transparent;
+        border-bottom: 1px solid rgb(247, 37, 133);
+    }
+    button{
+        border: none !important;
+    }
+    #find-me-button{
+        font-size: 0.8em;
+    }
+    #find-me-toggle i{
+        display: inline-block;
+        margin-left: 5px;
+        font-size: 1em;
+    }
+
+.container main, aside{
+    height: 80vh;
+}
+    main{
+        /*border: 1px solid rgb(181, 23, 158);*/
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 5px;
+        border-image-source: linear-gradient(90deg, rgb(76, 201, 240), rgb(181, 23, 158), rgb(247, 37, 133));
+
+        box-sizing: border-box;
+        padding: 10px;
+        width: 60%;
+        overflow: scroll;
+        overflow-x: hidden;
+
+        text-align: justify;
+    }
+        .content{
+            width: 70%;
+        }
+   
+    aside{
+        box-sizing: border-box;
+        padding: 10px;
+        width: 40%;
+        /*border-top: 1px solid rgb(76, 201, 240);*/
+    }
+
+    footer{
+        height: 10vh;
+        width: 80%;
+        margin: 0;
+        clear: both !important;
+    }
+    #animacao-footer{
+        position: relative;
+        top: 0%;
+    
+        animation-name: animacao-footer;
+        animation-duration: 1.5s;
+        animation-delay: 0s;
+        animation-iteration-count: 1;  
+    }
+    @keyframes animacao-footer{
+        from{
+            top: 20%;
+    
+        }
+        to{
+            top: 0%;
+    
+        }
+    
+    }

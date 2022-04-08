@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>...</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../estilo-blog-content.css">
+        <script src="https://kit.fontawesome.com/b4971a44cf.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="container">
+
+        <header class="m-0">
+
+            <nav class="navbar navbar-dark navbar-p30">
+
+                <div class="navbar-brand float-start align-items-center ms-2 brand">
+                    <a href="index.html"><span>P30</span></a>
+                </div>
+
+                <div class="nav-item m-auto align-items-center navbar-center">
+                    <a class="nav-link" href="cursos.html">Cursos</a>
+                    <a class="nav-link" href="projetos.html">Projetos</a>
+                    <a class="nav-link active" href="blog-p30.html">Blog P30</a>
+                </div>
+
+                <div class="nav-item float-end align-items-center me-2 d-none d-lg-flex">
+                    <button class="navbar-toggler d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#find-me-toggle">
+                        
+                        <span id="find-me-button">
+                        <span>find-me &nbsp</span>
+                        <span><i class="fa-solid fa-magnifying-glass fa-xs"></i></span></span>
+                                             
+                    </button>
+                    <div class="collapse navbar-collapse" id="find-me-toggle">
+                        <a href="mrheltonso@gmail.com" class="ms-2"><i class="fa-regular fa-envelope fa-xl"></i> mrheltonso@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/helton-oliveira-521abbb2/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                        <a href="https://github.com/Holiv"><i class="fa-brands fa-github fa-xl"></i></a>
+                        <a href="https://www.instagram.com/oliveira.sk/"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container d-flex">
+
+            <main class="container scrollbar">
+                <div class="">
+                    <h2>CS50x Week 1 - C</h2>
+                    <p style="text-align: justify;">
+                        <strong>Correctness</strong> - We need to do a code that work the way we need.<br>
+                        <strong>Design</strong> - Beyond correctness, we need that our code must be well designed. (It can never be a visual mess).<br>
+                        <strong>Style</strong> - Create a habit of write code in a certain way.<br>
+                        <strong>Command Line Interface (CLI)</strong> - Offered by Linux to transform source code in machine code.<br>
+                    </p>
+                    <p>
+                        <strong>Comands (Linux):</strong>
+                        <ol>
+                            <li>make/code (+ name): create a program after finish the code.</li>
+                            <li>rm (+ name): to remove the program created</li>
+                            <li>y: to confirm</li>
+                            <li>cd: change directory</li>
+                            <li>type cd +directory name to create a new directory.</li>
+                            <li>type cd +directory name of a directory that already exist to enter in the directory. (to create a new directory inside the actual directory, just type cd again and repeat the steps)</li>- 
+                            <li>type cd.. to get out of the directory (one step).</li>
+                            <li>type cd../.. to back to the default folder.</li>
+                            <li>cp: copy</li>
+                            <li>ls: list</li>
+                            <li>mkdir: make directory</li>
+                            <li>mv: move(or rename)</li>
+                            <li>rmdir: remove directory</li>
+                        </ol>
+                    </p>
+                    <p>
+                        <strong>Commands/Data Types (C) - Standard IO (stdio.h):</strong>
+                        <ol>
+                            <li>String: used to save and print a string, like a phrase or a name.</li>
+                            <li>Bool: To create a Boolean value, if something is true or false.</li>
+                            <li>Char: Used to a single character.</li>
+                            <li>Float: To real numbers with a decimal point.</li>
+                            <li>Double: Used with you need more precision (more numbers after the decimal point).</li>
+                            <li>Int: To real numbers (intergers)</li>
+                            <li>Long: when you have to use a bigger int.</li>
+                        </ol>
+
+                    </p>
+                    <p>
+                        <strong>Commands to get a type of data (C) / to print a type of data (C) - CS50 IO (cs50.h):</strong>
+                        <ol>
+                            <li>Get_char: / %c</li>
+                            <li>Get_float: / %f</li>
+                            <li>Get_int: / %i</li>
+                            <li>Get_long: / %li</li>
+                            <li>Get_string: / %s</li>
+                            <li>Get_double:</li>
+                        </ol>
+                    </p>
+                    <p>
+                        <strong>Functions:</strong>
+                        Can be of different types, for different purposes, for example: get_string( );<br>
+                        Also, every function (or almost all) comes together with the structure: parenthesis, doble apostrophe and semicolon to end the function.<br><br>
+                        <spam style="border-bottom: 1px solid black;">
+                            Get_string(“”) is a function to keep a informed value and have it used afterwards.
+                        </spam><br><br>
+                        It has to be stored in some identifier, so it is used the equal symbol to indicate where the string informed in the get_string will be stored.<br><br>
+                        <spam style="border-bottom: 1px solid black;">
+                            Answer = get_string(“what’s your name?”);
+                        </spam><br><br>
+                        You also have to indicate what type of value you are going to store (as you can see, computer needs high level of specification.<br><br>
+                        <spam style="border-bottom: 1px solid black;">
+                            <strong>string</strong> answer = get_string(“what’s your name?”);
+                        </spam><br><br>
+                        After storing the information, you want to print it, return the value to the screen. You have to inform to the computer, inside of the doble quotes that you want to have a placeholder using %s. Doing this, the computer understand that it have to put a string where %s indicated.<br><br>
+                        <spam style="border-bottom: 1px solid black;">
+                            Printf( “hello, %s”);
+                        </spam><br><br>
+                        Next step is to insert a coma then indicating the variable you want that the computer plug in at that %s location.<br><br>
+                        <spam style="border-bottom: 1px solid black;">
+                            Printf( “hello, <strong>%s</strong>”, answer);
+                        </spam><br><br>
+                        When setting a variable line counter you can define its initial value as 0, or another value you want. But to add a value you must follow some rules:
+                        <ul>
+                            <li><strong>Counter = counter + 1; </strong>(note that the equal symbol doesn’t mean equality, it means that the final value of counter will be the result of what is informed after the equal symbol and stored in the variable counter. Other options below.</li>
+                            <li><<strong>Counter = +1;</strong></li>
+                            <li><<strong>Counter++;</strong></li>
+                        </ul>
+                        It turns that the initial value of the variable counter will be 1.<br><br>
+                    </p>
+                    <p>
+                        <strong>Interger Overflow</strong><br>
+                        Must substitute the int for long when the returned result of a operation is bigger than 32bits and it comes as an error. Using long in place of int you expand the amount of bits supported by the program.<br><br>
+                    </p>
+                    <p>
+                        <em>To comment in C the command to initiate the comment is // ..comment</em>
+                    </p>
+                    <p>
+                        <strong>Conditions (Boolean Expressions)</strong><br>
+                        when you have to obey a condition to have a result. The result can come through to ways (conditions – IF or ELSE). <em>If the condition is attended the result will return a value declared to IF. If the condition is not attended, the result will return as declared to ELSE.</em><br><br>
+                        When you see something inside parenthesis generally is a function, but not when using IF.<br><br>
+                        When a Boolean expression (a question in program) has <strong>3 possibilities, x > y, x < y, x = y, you just have to ask two questions.</strong> The first question will return a true or false answer, already testing two possibilities. <em>For example, x > y if true the program will print the answer. If false the ELSE question will be asked y > x, but as we have a third option, this ELSE must be a ELSE IF, asking ELSE IF y > x or ELSE x == y.</em><br>
+                    </p>
+                    <p>
+                        When using conditionals and eventually loops, there’s no semicolons involved. (not adding ; at the end of if, else, else if.) Semicolons usually finish your thought after a function.<br>
+                    </p>
+                    <p>
+                        To avoid some errors or mistakes in the code we can create a ‘const’ to the variable int mine = 2; > const int mine = 2; It will save the value of 2 into the variable mine making it impossible to be changed inside the program throughout other variable/function. (you are saying to the computer not trust in you, making it constant and neve thinking about it again).<br>
+                    </p>
+                    <p>
+                        Nice tip is to make the name of the constant capitalized, mine > MINE. 
+                        A visual reminder.<br>
+                    </p>
+                    <p>
+                        <stron>Parity (even or odd) </stron>
+                        To tell a number resultant of an operation (or just informed by the user) is even or odd we must use the operator % (reminder) and if (n % 2 == 0) then it’s even, otherwise its odd. Another hint about this line of code is the double equal symbols. Using two of them you tell to the computer you mean literally equality and not equivalency (when you use a single equal sign you mean that the result of the operation after the = will fill the value.<br>
+                    </p>
+                    <p>
+                        <stron>Agree (ex: checkbox to agree/disagree) – using Or </stron>
+                        When you came to answer a simple question in a process to agree or disagree with something like using just y for yes/agree and n for no/disagree it turns that you are using a Character (or cha) because you will have in return as a value just a single character, y or n. In addition, to avoid mistakes, you can indicate to the program that you also accept a capitalized Y or N as answer.<br>
+                    </p>
+                    <p>
+                        <stron>A Loop [While (true)] and For Loop </stron>
+                        When you want a action to repeat forever or repeat X times as you defined. To repeat forever, the value set must be ‘true’. To repeat a defined amount of times, must be defined a counter and in every repetition the must be added one point at the counter.<br>
+                    </p>
+                    <p>
+                        <stron>Creating functions</stron>
+                        To create a new function, we have to declare before the name of the function what it will return, if nothing just void, then we create the function name ‘meow’. The void within the parentheses after the name of the function indicates the that function doesn’t take any arguments or inputs.<br>
+                        <strong>void meow(void)</strong><br>
+                        So now we have another way to type our code with the same result. For that, we also declare what do we want to have inside our function, in this case:</br>
+                    </p>
+                    <p>
+                        <stron>Discount (Float)</stron><br>
+                        Sometimes we need to create functions that returns a value. In this case we have as example the type of data Float.<br>
+                        First the function to apply the discount must be created.<br>
+                        <strng>float discount(float price);</strng><br>
+                        It means that the function is a float type, its name discount and returns a price in it.<br>
+                    </p>
+                    <p>
+                        In C, we must specify the *return type (of data)*, the *name of the function*, and the *inputs, or arguments* to that function in that order and if none of them are applicable, you write the word void.<br>
+                        Example: <strong>float discount(float price).</strong>
+                    </p>
+
+                </div>
+            </main>
+
+            <aside class="d-none d-md-flex">
+                <p>Lorem ipsum dolor...</p>
+            </aside>
+        </div>
+
+        <footer class="d-flex d-sm-none w-100 justify-content-center align-items-center">
+            <div id="animacao-footer" class="container">
+                <div class="row justify-content-center">
+                    <div class="col-2 d-flex justify-content-center"><i class="fa-brands fa-html5 fa-2xl"></i></div>
+                    <div class="col-2 d-flex justify-content-center"><i class="fa-brands fa-css3-alt fa-2xl"></i></div>
+                    <div class="col-2 d-flex justify-content-center"><i class="fa-brands fa-js-square fa-2xl"></i></div>
+                    <div class="col-2 d-flex justify-content-center"><i class="fa-brands fa-react fa-2xl"></i></div>
+                    <div class="col-2 d-flex justify-content-center"><i class="fa-brands fa-node-js fa-2xl"></i></div>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="d-none d-sm-flex justify-content-center align-items-center">
+            <div id="animacao-footer" class="container">
+                <div class="row justify-content-center">
+                    <div class="col-2 d-flex justify-content-center"><i class="fa-brands fa-html5 fa-2xl"></i></div>
+                    <div class="col-2 d-flex justify-content-center"><i class="fa-brands fa-css3-alt fa-2xl"></i></div>
+                    <div class="col-2 d-flex justify-content-center"><i class="fa-brands fa-js-square fa-2xl"></i></div>
+                    <div class="col-2 d-flex justify-content-center"><i class="fa-brands fa-react fa-2xl"></i></div>
+                    <div class="col-2 d-flex justify-content-center"><i class="fa-brands fa-node-js fa-2xl"></i></div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
